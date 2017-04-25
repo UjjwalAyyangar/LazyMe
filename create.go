@@ -70,7 +70,7 @@ func main() {
 		fmt.Println("Repository created but ,error while cloning")
 	} else {
 
-		fmt.Println("You can cd to you repository now", string(out))
+		fmt.Println("You can cd to your repository now", string(out))
 		fmt.Println("Go to the following link to access your repository online :- ", repoUrl2)
 	}
 
