@@ -1,12 +1,29 @@
 # LazyMe
 Script to make repo creation faster for lazy developers like me.
 
-<h3> Usage </h3><br/>
+## Installation
+```sh
+> go get github.com/UjjwalAyyangar/lazyme
+```
 
-After installing it as a binary on your system :- <br/>
+## Usage
 
-* Just go and type "create" on the terminal. <br/>
-* Follow the steps. <br/>
-* After you're done, you will have a git repository created online and stored locally. <br/>
+```sh
+> lazyme
+Enter GitHub Username or Email : shubhodeep9
+Enter GitHub Password :
+Enter the details for the repository you want to create
 
-![Alt text](https://github.com/UjjwalAyyangar/LazyMe/blob/master/Screenshot.png?raw=true "Usage")
+Name of the repository : sometest
+Do you want it to be private? : [n]
+Give a one line description for your Repository : testing
+Do you want to initialize this repository with a README? : [n] y
+Yohoo! Repo created, visit https://github.com/shubhodeep9/sometest
+
+Do you want to clone the repository? : [y] y
+Yay, you may visit the directory
+Bye!
+```
+
+## Contributors
+[@UjjwalAyyangar](https://github.com/UjjwalAyyangar) · [@shubhodeep9](https://github.com/shubhodeep9)
