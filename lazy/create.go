@@ -31,7 +31,7 @@ func (lc *LazyClient) CreateRepo() {
 
 	description := lc.reader.GetInput("Give a one line description for your Repository", "text", "")
 
-	readme := strings.ToLower(lc.reader.GetInput("Do you want to initialize this repository with a README", "text", "n"))
+	readme := strings.ToLower(lc.reader.GetInput("Do you want to initialize this repository with a README?", "text", "n"))
 
 	var autoinit = chooser(readme)
 
@@ -49,5 +49,12 @@ func (lc *LazyClient) CreateRepo() {
 		log.Fatal(strconv.Itoa(response.Remaining) + " un-authorised requests left for this hour")
 	}
 
-	fmt.Println(repository.GetCloneURL())
+	fmt.Println("Yohoo! Repo created, visit", repository.GetHTMLURL())
+
+	clone := strings.ToLower(lc.reader.GetInput("\nDo you want to clone the repository?", "text", "y"))
+	if chooser(clone) {
+		lc.Clone(repository.GetCloneURL())
+	}
+
+	fmt.Println("Bye!")
 }
