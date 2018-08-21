@@ -1,7 +1,7 @@
 package main
 
 import (
-	"LazyMe/lazy"
+	"github.com/UjjwalAyyangar/LazyMe/lazy"
 )
 
 func main() {
