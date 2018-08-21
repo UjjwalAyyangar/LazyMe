@@ -25,5 +25,11 @@ Yay, you may visit the directory
 Bye!
 ```
 
+## Development
+Instructions to setup development environment for contribution:
+
+- Clone the repository in `$GOPATH/src/github.com/UjjwalAyyangar/`
+- Install dependencies via `curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh && dep ensure`
+
 ## Contributors
 [@UjjwalAyyangar](https://github.com/UjjwalAyyangar) · [@shubhodeep9](https://github.com/shubhodeep9)
